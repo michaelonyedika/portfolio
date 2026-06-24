@@ -9,9 +9,10 @@ const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        Kind words from
-        <span className="text-purple"> satisfied clients</span>
+        Impact &<span className="text-purple"> Achievements</span>
       </h1>
+      {/* "Impact & Achievements" */}
+      {/* "Kind words from satisfied clients" */}
 
       <div className="flex flex-col items-center max-lg:mt-10">
         <div
@@ -34,12 +35,16 @@ const Clients = () => {
                   alt={company.name}
                   className="md:w-10 w-5"
                 />
-                <img
+                {/* <img
                   src={company.nameImg}
                   alt={company.name}
                   width={company.id === 4 || company.id === 5 ? 100 : 150}
                   className="md:w-24 w-20"
-                />
+                /> */}
+                {/* lg:text-2xl md:text-xl text-base */}
+                <p className="text-center font-semibold text-lg md:text-xl lg:text-2xl ">
+                  {company.name}
+                </p>
               </div>
             </React.Fragment>
           ))}

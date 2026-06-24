@@ -1,3 +1,4 @@
+// data/index.ts
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -8,7 +9,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Building scalable AI-powered and full-stack applications.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -17,19 +18,9 @@ export const gridItems = [
     spareImg: "",
   },
   {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "AI & Full-Stack Technology Stack",
+    description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -37,8 +28,20 @@ export const gridItems = [
     spareImg: "",
   },
   {
+    id: 2,
+    title: "Experienced in collaborating across global teams and time zones.",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+
+  {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title:
+      "Passionate about AI, cloud infrastructure, and modern software engineering.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,8 +52,9 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title:
+      "Currently building AI-powered products and scalable backend systems.",
+    description: "The focused",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,7 +63,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Let's build your next AI or SaaS product.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -72,94 +76,101 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "Innohub - Crowdsourcing platform",
+    des: "Enabling companies, governments, and NGOs to connect with a global network of problem solvers and innovators.",
+    img: "/sdg-innohub-2.PNG",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://innohub.unsdgleadershipcenter.org/",
+    pinLink: "unsdgleadershipcenter.org",
+    clickableText: "Check Live Site",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "StoreFront - E-commerce website",
+    des: "Simplify your e-commerce experience with StoreFront. Seamlessly connect with customers and manage your online store.",
+    img: "/ecomm.PNG",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://heartfelt-cheesecake-33a5a3.netlify.app/",
+    pinLink: "ecomm.com",
+    clickableText: "Check Live Site",
+    // clickableText: "Coming Soon",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title: "Appety - Restaurant booking & food delivery app",
+    des: "Reintegrated payment services across POS, kiosk, digital menu, and delivery platforms using Express.js, GraphQL, Redis, and PostgreSQL, improving payment success rates to 99%",
+    img: "/appety-site.PNG",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://web.appety.menu/",
+    pinLink: "appety.menu",
+    clickableText: "Check Live Site",
   },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
+  // {
+  //   id: 4,
+  //   title: "Animated Apple Iphone 3D Website",
+  //   des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+  //   img: "/p4.svg",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+  //   link: "/ui.apple.com",
+  // },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Delivered payment infrastructure improvements across POS, kiosk, digital menu, and delivery platforms, achieving 99%+ payment success rates and supporting reliable transaction processing at scale.",
+    name: "99%+",
+    title: "Payment Success Rate",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Built a no-code e-commerce web builder that enabled merchants to launch online stores in minutes, reducing website setup time by more than 80%.",
+    name: "80%+",
+    title: "Reduction in Store Setup Time",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Optimized backend services using Node.js, GraphQL, Redis, and PostgreSQL, improving API response times by 35% and enhancing system performance.",
+    name: "35%",
+    title: "Faster API Response Times",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Developed and scaled SaaS, fintech, crowdsourcing, and e-commerce platforms used by hundreds of organizations and thousands of users.",
+    name: "1,000+",
+    title: "Users & Contributors Supported",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Built and deployed machine learning solutions for real estate price prediction and loan approval automation using Python, Scikit-learn, and AWS cloud infrastructure.",
+    name: "AI/ML",
+    title: "Production ML Solutions",
   },
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
+    name: "Python",
+    img: "/python-logo.png",
     nameImg: "/cloudName.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
+    name: "JavaScript",
+    img: "/javascript-logo.png",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
+    name: "React JS",
+    img: "/React-icon.png",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
+    name: "PostgreSQL",
+    img: "/Postgresql.png",
     nameImg: "/streamName.svg",
   },
   {
@@ -173,45 +184,48 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full-Stack Engineer - Appety",
+    desc: "Reintegrated payment services across POS, kiosk, digital menu, and delivery platforms using Express.js, GraphQL, and PostgreSQL, improving payment success rates to 99%.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Frontend Engineer - Deempay Technology Ltd.",
+    desc: "Contributed to the development of scalable e-commerce solutions that expanded clients' digital presence, increasing customer reach and improving online shopping experiences.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Software Engineer Intern - Deempay Technology Ltd.",
+    desc: "Collaborated with other teams to deliver high-impact web applications using React.js, Next.js, Tailwind CSS, REST APIs, and modern frontend engineering practices.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
+  // {
+  //   id: 4,
+  //   title: "Lead Frontend Developer",
+  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp4.svg",
+  // },
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/michaelonyedika",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/okoyentamichael",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/michael-okoyenta-8357aa163/",
   },
 ];
