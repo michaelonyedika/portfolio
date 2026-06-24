@@ -57,8 +57,8 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I'm Michael — helping startups and enterprises turn ambitious
-            ideas into production-ready solutions.
+            Hi, I&apos;m Michael — helping startups and enterprises turn
+            ambitious ideas into production-ready solutions.
           </p>
 
           <a href="#about">

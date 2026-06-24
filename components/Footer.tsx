@@ -22,8 +22,8 @@ const Footer = () => {
         </h1>
 
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Let's discuss how AI, cloud technologies, and scalable software can
-          help bring your vision to life.
+          Let&apos;s discuss how AI, cloud technologies, and scalable software
+          can help bring your vision to life.
         </p>
         <a href="mailto:michaelonyedika32@gmail.com" target="_blank">
           <MagicButton
