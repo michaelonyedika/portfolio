@@ -46,6 +46,7 @@ const Footer = () => {
               href={info.link}
               target="_blank"
             >
+              {/* I need to add my phone contact info */}
               <img src={info.img} alt="icons" width={20} height={20} />
             </a>
           ))}
