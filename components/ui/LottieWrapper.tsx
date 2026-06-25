@@ -4,8 +4,7 @@ import Lottie from "react-lottie";
 type LottieOptions = {
   loop?: boolean;
   autoplay?: boolean;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  animationData: any;
+  animationData: any; // lottie-web types this as any
   rendererSettings?: Record<string, string>;
 };
 
