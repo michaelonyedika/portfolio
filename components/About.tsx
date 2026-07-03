@@ -54,7 +54,7 @@ export const About = () => {
 
             <div className="space-y-4 text-purpleForeground animate-fade-in animation-delay-200">
               <p>
-                I'm an AI full-Stack Software Engineer with 3+ years of
+                I&apos;m an AI full-Stack Software Engineer with 3+ years of
                 experience building scalable web applications using React.js,
                 Next.js, Express.js, FastAPI, and Flask. Skilled in developing
                 responsive user interfaces, designing RESTful APIs, integrating
@@ -68,9 +68,9 @@ export const About = () => {
 
             <div className="glassAbout rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to build intelligent, scalable software that
+                &quotMy mission is to build intelligent, scalable software that
                 solves real-world problems, and delivers exceptional user
-                experiences through AI and modern engineering."
+                experiences through AI and modern engineering.&quot
               </p>
             </div>
           </div>

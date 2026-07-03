@@ -8,10 +8,10 @@ export default function AISuggestion() {
       </div>
 
       <p className="text-gray-300 mt-8 leading-8">
-        Here's a smarter way to say it:
+        Here&apos;s a smarter way to say it:
         <br />
         <br />
-        Thank you for your message! We're excited to help and will get back
+        Thank you for your message! We&apos;re excited to help and will get back
         shortly.
       </p>
 
