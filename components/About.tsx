@@ -68,9 +68,9 @@ export const About = () => {
 
             <div className="glassAbout rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                &quotMy mission is to build intelligent, scalable software that
+                &quot;My mission is to build intelligent, scalable software that
                 solves real-world problems, and delivers exceptional user
-                experiences through AI and modern engineering.&quot
+                experiences through AI and modern engineering.&quot;
               </p>
             </div>
           </div>
