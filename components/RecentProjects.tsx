@@ -9,7 +9,7 @@ const RecentProjects = () => {
   return (
     <div className="py-20 scroll-mt-20" id="projects">
       <h1 className="heading">
-        Selection of <span className="text-purple">recent projects</span>
+        Recent <span className="text-heroAccent">Projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
@@ -44,7 +44,7 @@ const RecentProjects = () => {
               <p
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
                 style={{
-                  color: "#BEC1DD",
+                  color: "#d9c9f1",
                   margin: "1vh 0",
                 }}
               >
