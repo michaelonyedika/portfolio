@@ -2,12 +2,13 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { HeroLink } from "./HeroLink";
 
 const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        <span className="text-heroAccent">Approach</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
@@ -49,6 +50,11 @@ const Approach = () => {
         </Card>
         <Card
           title="Development & Launch"
+          // icon={
+          //   <HeroLink variant="glass" href="#">
+          //     Phase 3
+          //   </HeroLink>
+          // }
           icon={<AceternityIcon order="Phase 3" />}
           des="This is where the magic happens! Based on the approved design, 
           I'll translate everything into functional code, building your website
@@ -86,13 +92,13 @@ const Card = ({
       onMouseLeave={() => setHovered(false)}
       // change h-[30rem] to h-[35rem], add rounded-3xl
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center
-       dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl "
+       dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl"
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        background: "rgb(16, 9, 20)",
+        backgroundImage:
+          "linear-gradient(90deg, rgba(16,9,20,1) 0%, rgba(30,18,38,1) 100%)",
       }}
     >
       {/* change to h-10 w-10 , add opacity-30  */}
@@ -154,7 +160,7 @@ const AceternityIcon = ({ order }: { order: string }) => {
       <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
         <span
           className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
-         bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+         bg-[conic-gradient(from_90deg_at_50%_50%,#F3E8FF_0%,#a855f7_50%,#F3E8FF_100%)]"
         />
         <span
           className="inline-flex h-full w-full cursor-pointer items-center 

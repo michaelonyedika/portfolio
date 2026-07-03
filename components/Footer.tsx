@@ -2,10 +2,14 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+import { HeroLink } from "./HeroLink";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10 relative overflow-hidden scroll-mt-20" id="contact">
+    <footer
+      className="w-full pt-20 pb-10 relative overflow-hidden scroll-mt-20"
+      id="contact"
+    >
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
@@ -17,7 +21,7 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to build <span className="text-purple">your</span> next
+          Ready to build <span className="text-heroAccent">your</span> next
           AI-powered product?
         </h1>
 
@@ -25,13 +29,21 @@ const Footer = () => {
           Let&apos;s discuss how AI, cloud technologies, and scalable software
           can help bring your vision to life.
         </p>
-        <a href="mailto:michaelonyedika32@gmail.com" target="_blank">
+
+        <HeroLink
+          variant="glass"
+          href="mailto:michaelonyedika32@gmail.com"
+          target="_blank"
+        >
+          Get in touch
+        </HeroLink>
+        {/* <a href="mailto:michaelonyedika32@gmail.com" target="_blank">
           <MagicButton
             title="Get in touch"
             icon={<FaLocationArrow />}
             position="right"
           />
-        </a>
+        </a> */}
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">

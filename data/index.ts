@@ -2,7 +2,13 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Impact", link: "#testimonials" },
+  {
+    name: "Resume",
+    link: "/full-stack-engineer-cv.pdf",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -29,7 +35,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Experienced in collaborating across global teams and time zones.",
+    title: "Experienced in collaborating across global",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
