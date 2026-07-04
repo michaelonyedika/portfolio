@@ -1,6 +1,7 @@
 // app/page.tsx
 "use client";
 
+import { useEffect } from "react";
 import { navItems } from "@/data";
 
 import Hero from "@/components/Hero-2";
@@ -16,6 +17,13 @@ import PageAtmosphere from "@/components/PageAtmosphere";
 import { Navbar } from "@/components/NavbarRay";
 
 const Home = () => {
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       {/* <FloatingNav navItems={navItems} /> */}
