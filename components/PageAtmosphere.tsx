@@ -11,7 +11,8 @@ export default function PageAtmosphere() {
 
       <div className="absolute bottom-0 -right-40 h-[600px] w-[600px] rounded-full bg-heroAccent/10 blur-[160px]" />
 
-      <Particles count={24} />
+      {/* count 24 */}
+      <Particles count={10} />
     </div>
   );
 }

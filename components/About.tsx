@@ -1,87 +1,112 @@
 import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { motion } from "framer-motion";
 import Particles from "./Particles";
-import BackgroundGlow from "./BackgroundGlow";
 import { companies } from "@/data";
-import React from "react";
+import { fadeInUp, fadeInUpScale, staggerContainer } from "./ui/motionVariants";
 
 const highlights = [
   {
     icon: Code2,
-    title: "Clean Coded design",
-    description: "Providing design that can be converted to code.",
+    title: "AI Engineering",
+    description:
+      "Developing intelligent applications powered by LLMs, AI agents, automation, and modern machine learning technologies.",
   },
   {
     icon: Rocket,
-    title: "Delivery",
-    description: "Optimizing within time duration.",
+    title: "Scalable Architecture",
+    description:
+      "Designing secure backend systems and cloud-native infrastructure built for performance, reliability, and growth.",
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life by design.",
+    title: "Collaborative Development",
+    description:
+      "Partnering with startups and teams to transform ideas into polished, production-ready software through agile development.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: "Continuous Innovation",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Exploring emerging AI technologies, modern frameworks, and engineering best practices to build future-ready products.",
   },
 ];
 
 export const About = () => {
   return (
-    <section className="py-32 relative overflow-hidden" id="about">
-      {/* <Particles /> */}
+    <section className="py-32 relative overflow-hidden scroll-mt-20" id="about">
+      <Particles />
       {/* <BackgroundGlow /> */}
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column */}
-          <div className="space-y-8">
-            <div className="animate-fade-in">
+          <motion.div
+            className="space-y-8"
+            variants={staggerContainer(0.15)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <motion.div variants={fadeInUp}>
               <span className="text-heroAccent text-sm font-medium tracking-wider uppercase">
                 About Me
               </span>
-            </div>
+            </motion.div>
 
             {/* "Building scalable AI-powered and full-stack applications." */}
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-heroAccent">
-              Building AI-powered
+            <motion.h2
+              variants={fadeInUp}
+              className="text-4xl md:text-5xl font-bold leading-tight text-heroAccent"
+            >
+              Building AI-Powered
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                and full-stack applications.
+                and Modern Full-Stack Applications.
               </span>
-            </h2>
+            </motion.h2>
 
-            <div className="space-y-4 text-purpleForeground animate-fade-in animation-delay-200">
+            <motion.div
+              variants={fadeInUp}
+              className="space-y-4 text-purpleForeground"
+            >
               <p>
-                I&apos;m an AI full-Stack Software Engineer with 3+ years of
-                experience building scalable web applications using React.js,
-                Next.js, Express.js, FastAPI, and Flask. Skilled in developing
-                responsive user interfaces, designing RESTful APIs, integrating
-                payment systems, and managing MySQL and PostgreSQL databases.
+                I&apos;m an AI Full-Stack Engineer passionate about building
+                intelligent, scalable, and high-performance digital products. I
+                combine modern web technologies with artificial intelligence to
+                create seamless user experiences and robust backend systems.
               </p>
               <p>
-                Experienced in delivering fintech, SaaS, e-commerce, and
-                analytics solutions in collaborative agile environments.
+                From AI-powered SaaS platforms and automation tools to
+                cloud-native applications, I transform complex ideas into
+                secure, scalable solutions that help businesses innovate and
+                grow.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="glassAbout rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
+            <motion.div
+              variants={fadeInUp}
+              className="glassAbout rounded-2xl p-6 glow-border"
+            >
               <p className="text-lg font-medium italic text-foreground">
-                &quot;My mission is to build intelligent, scalable software that
-                solves real-world problems, and delivers exceptional user
-                experiences through AI and modern engineering.&quot;
+                &quot;Building intelligent software that empowers people, solves
+                real-world challenges, and turns ambitious ideas into
+                exceptional digital experiences.&quot;
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Right Column - Hilights */}
-          <div className="grid sm:grid-cols-2 gap-6">
+          <motion.div
+            className="grid sm:grid-cols-2 gap-6"
+            variants={staggerContainer(0.1)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             {highlights.map((item, idx) => (
-              <div
+              <motion.div
                 key={idx}
-                className="glass p-6 rounded-2xl animate-fade-in"
-                style={{ animationDelay: `${(idx + 1) * 100}ms` }}
+                variants={fadeInUpScale}
+                className="glass p-6 rounded-2xl"
               >
                 <div className="w-12 h-12 rounded-xl bg-heroAccent/10 flex items-center justify-center mb-4 hover:bg-heroAccent/20">
                   <item.icon className="w-6 h-6 text-heroAccent" />
@@ -90,35 +115,33 @@ export const About = () => {
                 <p className="text-sm text-purpleForeground">
                   {item.description}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 mt-16">
+      <motion.div
+        className="flex flex-wrap items-center justify-center gap-4 md:gap-16 mt-20 scroll-mt-32"
+        variants={staggerContainer(0.06)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        id="ai-stack"
+      >
         {companies.map((company) => (
-          <React.Fragment key={company.id}>
-            <div className="flex md:max-w-60 max-w-32 gap-2">
-              <img
-                src={company.img}
-                alt={company.name}
-                className="md:w-10 w-5"
-              />
-              {/* <img
-                        src={company.nameImg}
-                        alt={company.name}
-                        width={company.id === 4 || company.id === 5 ? 100 : 150}
-                        className="md:w-24 w-20"
-                      /> */}
-              {/* lg:text-2xl md:text-xl text-base */}
-              <p className="text-center font-semibold text-lg md:text-xl lg:text-2xl ">
-                {company.name}
-              </p>
-            </div>
-          </React.Fragment>
+          <motion.div
+            key={company.id}
+            variants={fadeInUp}
+            className="flex md:max-w-60 max-w-32 gap-2"
+          >
+            <img src={company.img} alt={company.name} className="md:w-10 w-5" />
+            <p className="text-center font-semibold text-lg md:text-xl lg:text-2xl ">
+              {company.name}
+            </p>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

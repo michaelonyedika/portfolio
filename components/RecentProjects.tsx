@@ -1,21 +1,36 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import { fadeInUp } from "./ui/motionVariants";
+import Particles from "./Particles";
 
 const RecentProjects = () => {
   return (
     <div className="py-20 scroll-mt-20" id="projects">
-      <h1 className="heading">
+      <Particles />
+      <motion.h1
+        className="heading"
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         Recent <span className="text-heroAccent">Projects</span>
-      </h1>
+      </motion.h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
-          <div
+        {projects.map((item, idx) => (
+          <motion.div
             className={`lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]`}
             key={item.id}
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: (idx % 3) * 0.1 }}
             onClick={() =>
               item.link &&
               window.open(item.link, "_blank", "noopener,noreferrer")
@@ -75,7 +90,7 @@ const RecentProjects = () => {
               </div>
             </PinContainer>
             {/* </a> */}
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

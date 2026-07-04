@@ -61,9 +61,14 @@ export const Navbar = () => {
             <Cpu className="text-heroAccent" size={22} />
           </div>
 
-          <span className="text-white font-semibold text-xl">
-            Michael Okoyenta
-          </span>
+          <div className="leading-tight min-w-0">
+            <h1 className="text-white font-semibold text-xl">
+              Michael Okoyenta
+            </h1>
+            <p className="hidden sm:block text-[11px] tracking-[2px] text-heroAccent/85 uppercase">
+              AI Full-Stack Engineer
+            </p>
+          </div>
         </Link>
         {/* <a
           href="#"
@@ -79,8 +84,8 @@ export const Navbar = () => {
               <a
                 key={index}
                 href={navItem.link}
-                target={navItem?.target}
-                rel={navItem?.rel}
+                // target={navItem?.target}
+                // rel={navItem?.rel}
                 className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
               >
                 {navItem.name}
@@ -96,7 +101,7 @@ export const Navbar = () => {
             target="_blank"
             className="hidden md:inline-block px-6 py-3 rounded-xl border border-heroAccent text-white text-sm backdrop-blur-md hover:border-heroAccent/40 transition"
           >
-            Hire Me
+            Start a Project
           </a>
         </div>
 
@@ -125,8 +130,8 @@ export const Navbar = () => {
                   key={index}
                   variants={itemVariants}
                   href={navItem.link}
-                  target={navItem?.target}
-                  rel={navItem?.rel}
+                  // target={navItem?.target}
+                  // rel={navItem?.rel}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-lg text-muted-foreground hover:text-foreground py-2"
                 >
@@ -142,7 +147,7 @@ export const Navbar = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="inline-block px-6 py-3 rounded-xl border border-heroAccent text-white text-sm text-center backdrop-blur-md hover:border-heroAccent/40 transition"
               >
-                Hire Me
+                Start a Project
               </motion.a>
             </div>
           </motion.div>
