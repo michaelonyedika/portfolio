@@ -2,13 +2,15 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Impact", link: "#testimonials" },
-  {
-    name: "Resume",
-    link: "/full-stack-engineer-cv.pdf",
-    target: "_blank",
-    rel: "noopener noreferrer",
-  },
+  // { name: "Impact", link: "#testimonials" },
+  { name: "AI Stack", link: "#ai-stack" },
+  { name: "Experience", link: "#experience" },
+  // {
+  //   name: "Resume",
+  //   link: "/full-stack-engineer-cv.pdf",
+  //   target: "_blank",
+  //   rel: "noopener noreferrer",
+  // },
   { name: "Contact", link: "#contact" },
 ];
 

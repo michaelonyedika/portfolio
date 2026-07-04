@@ -80,19 +80,19 @@ export default function Hero() {
             >
               <span className="flex items-center gap-2 uppercase tracking-[2px] text-heroAccent text-xs">
                 <span className="h-1.5 w-1.5 rounded-full bg-heroAccent" />
-                Full Stack Developer
+                AI FULL-STACK ENGINEER
               </span>
 
               <h1 className=" text-6xl font-bold leading-tight text-white">
-                Crafting
-                <span className="block text-heroAccent">Intelligent</span>
-                <span className="hero-title">Digital Products</span>
+                Architecting
+                <span className="block text-heroAccent">The Future</span>
+                <span className="hero-title">of AI Software</span>
               </h1>
 
               <p className="text-gray-400 text-sm leading-relaxed">
-                Building modern web applications, scalable backend systems,
-                AI-powered experiences and premium digital products with
-                performance in mind.
+                Specializing in AI engineering, modern web technologies, and
+                scalable backend infrastructure to build innovative products
+                that deliver measurable impact.
               </p>
 
               <div className="flex gap-3">

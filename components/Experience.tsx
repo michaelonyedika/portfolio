@@ -1,14 +1,24 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
+import { fadeInUp } from "./ui/motionVariants";
+import Particles from "./Particles";
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full">
-      <h1 className="heading">
+    <div className="py-20 w-full scroll-mt-20" id="experience">
+      <Particles />
+      <motion.h1
+        className="heading"
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         Work<span className="text-heroAccent"> Experience</span>
-      </h1>
+      </motion.h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
