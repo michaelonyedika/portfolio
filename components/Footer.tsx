@@ -13,9 +13,11 @@ const Footer = () => {
       className="w-full pt-20 pb-10 relative overflow-hidden scroll-mt-20"
       id="contact"
     >
-      <Particles />
+      <div className="pointer-events-none absolute inset-0">
+        <Particles />
+      </div>
       {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
+      <div className="w-full absolute left-0 -bottom-72 min-h-96 pointer-events-none">
         <img
           src="/footer-grid.svg"
           alt="grid"
@@ -53,6 +55,9 @@ const Footer = () => {
             Let&apos;s Talk →
           </HeroLink>
         </motion.div>
+        {/* <button className="px-6 py-3 rounded-full text-white bg-heroAccent shadow-[0_0_30px_rgba(168,85,247,.7)] hover:bg-none hover:text-heroAccent border border-heroAccent transition hover:shadow-[0_0_30px_rgba(168,85,247,.7)]">
+          View Projects
+        </button> */}
         {/* <a href="mailto:michaelonyedika32@gmail.com" target="_blank">
           <MagicButton
             title="Get in touch"

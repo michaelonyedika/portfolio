@@ -127,7 +127,7 @@ export default function Hero() {
                 </button> */}
 
                 {/* 1. heroAccentBtn Style */}
-                <HeroLink variant="accent" href="/projects">
+                <HeroLink variant="accent" href="#projects">
                   View Projects
                 </HeroLink>
 
@@ -137,7 +137,11 @@ export default function Hero() {
                 </HeroLink> */}
 
                 {/* 3. heroAccentBtnGlass Style */}
-                <HeroLink variant="glass" href="/resume.pdf" target="_blank">
+                <HeroLink
+                  variant="glass"
+                  href="/full-stack engineer cv.pdf"
+                  target="_blank"
+                >
                   Download CV
                 </HeroLink>
               </div>
