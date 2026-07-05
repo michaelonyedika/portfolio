@@ -17,12 +17,12 @@ import PageAtmosphere from "@/components/PageAtmosphere";
 import { Navbar } from "@/components/NavbarRay";
 
 const Home = () => {
-  useEffect(() => {
-    if ("scrollRestoration" in window.history) {
-      window.history.scrollRestoration = "manual";
-    }
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   if ("scrollRestoration" in window.history) {
+  //     window.history.scrollRestoration = "manual";
+  //   }
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <>
