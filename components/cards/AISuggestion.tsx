@@ -12,9 +12,9 @@ export default function AISuggestion() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold text-sm">AI Suggestion</h4>
+            <h4 className="text-white font-semibold text-sm">StoreFront</h4>
 
-            <p className="text-gray-400 text-xs">Smart Portfolio Analysis</p>
+            <p className="text-gray-400 text-xs">Intelligent E-commerce</p>
           </div>
         </div>
 
