@@ -33,7 +33,7 @@ const highlights = [
 
 export const About = () => {
   return (
-    <section className="py-32 relative overflow-hidden scroll-mt-20" id="about">
+    <section className="py-32 relative overflow-hidden lg:scroll-mt-20" id="about">
       <Particles />
       {/* <BackgroundGlow /> */}
       <div className="container mx-auto px-6 relative z-10">
@@ -122,7 +122,7 @@ export const About = () => {
       </div>
 
       <motion.div
-        className="flex flex-wrap items-center justify-center gap-4 md:gap-16 mt-20 scroll-mt-32"
+        className="flex flex-wrap items-center justify-center gap-4 md:gap-16 mt-20 lg:scroll-mt-32"
         variants={staggerContainer(0.06)}
         initial="hidden"
         whileInView="visible"

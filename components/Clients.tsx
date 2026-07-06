@@ -10,7 +10,7 @@ import Particles from "./Particles";
 
 const Clients = () => {
   return (
-    <section id="testimonials" className="py-20 scroll-mt-20">
+    <section id="testimonials" className="py-20 lg:scroll-mt-20">
       <Particles />
       <motion.h1
         className="heading"
