@@ -10,7 +10,7 @@ import Particles from "./Particles";
 const Footer = () => {
   return (
     <footer
-      className="w-full pt-20 pb-10 relative overflow-hidden scroll-mt-20"
+      className="w-full pt-20 pb-10 relative overflow-hidden lg:scroll-mt-20"
       id="contact"
     >
       <div className="pointer-events-none absolute inset-0">

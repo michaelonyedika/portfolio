@@ -8,7 +8,7 @@ import Particles from "./Particles";
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full scroll-mt-20" id="experience">
+    <div className="py-20 w-full lg:scroll-mt-20" id="experience">
       <Particles />
       <motion.h1
         className="heading"

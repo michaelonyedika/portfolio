@@ -10,7 +10,7 @@ import Particles from "./Particles";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20 scroll-mt-20" id="projects">
+    <div className="py-20 lg:scroll-mt-20" id="projects">
       <Particles />
       <motion.h1
         className="heading"
