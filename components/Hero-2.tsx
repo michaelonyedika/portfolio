@@ -54,7 +54,7 @@ function DeveloperImage({ className }: { className?: string }) {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[650px] lg:h-[650px] bg-[#040404] overflow-hidden">
+    <section className="relative min-h-[650px] lg:h-svh lg:min-h-[650px] bg-[#040404] overflow-hidden">
       <MouseGlow />
 
       <Particles />

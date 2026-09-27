@@ -94,9 +94,9 @@ export const projects = [
       "/tail.svg",
       "/Postgresql.png",
     ],
-    link: "",
-    pinLink: "anticipate",
-    clickableText: "Coming Soon",
+    link: "https://customer.appliedintelligent.com/",
+    pinLink: "visit", // "appliedintelligent.com"
+    clickableText: "Check Live Site",
   },
   {
     id: 2,
@@ -105,22 +105,22 @@ export const projects = [
     img: "/sdg-innohub-2.PNG",
     iconLists: ["/next.svg", "/ts.svg", "/aws.png", "/tail.svg", "/java-2.png"],
     link: "https://innohub.unsdgleadershipcenter.org/",
-    pinLink: "unsdgleadershipcenter.org",
+    pinLink: "visit", // "unsdgleadershipcenter.org"
     clickableText: "Check Live Site",
   },
+  // {
+  //   id: 3,
+  //   title: "StoreFront - E-commerce website",
+  //   des: "Simplify your e-commerce experience with StoreFront. Seamlessly connect with customers and manage your online store.",
+  //   img: "/ecomm.PNG",
+  //   iconLists: ["/next.svg", "/ts.svg", "/aws.png", "/tail.svg", "/java-2.png"],
+  //   link: "https://heartfelt-cheesecake-33a5a3.netlify.app/",
+  //   pinLink: "visit", // "ecomm.com"
+  //   clickableText: "Check Live Site",
+  //   // clickableText: "Coming Soon",
+  // },
   {
     id: 3,
-    title: "StoreFront - E-commerce website",
-    des: "Simplify your e-commerce experience with StoreFront. Seamlessly connect with customers and manage your online store.",
-    img: "/ecomm.PNG",
-    iconLists: ["/next.svg", "/ts.svg", "/aws.png", "/tail.svg", "/java-2.png"],
-    link: "https://heartfelt-cheesecake-33a5a3.netlify.app/",
-    pinLink: "ecomm.com",
-    clickableText: "Check Live Site",
-    // clickableText: "Coming Soon",
-  },
-  {
-    id: 4,
     title: "Appety - Restaurant booking & food delivery app",
     des: "Reintegrated payment services across POS, kiosk, digital menu, and delivery platforms using Express.js, GraphQL, Redis, and PostgreSQL, improving payment success rates to 99%",
     img: "/appety-site.PNG",
@@ -132,7 +132,7 @@ export const projects = [
       "/Postgresql.png",
     ],
     link: "https://web.appety.menu/",
-    pinLink: "appety.menu",
+    pinLink: "visit", // "appety.menu"
     clickableText: "Check Live Site",
   },
   // {
