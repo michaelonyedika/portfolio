@@ -139,7 +139,7 @@ export default function Hero() {
                 {/* 3. heroAccentBtnGlass Style */}
                 <HeroLink
                   variant="glass"
-                  href="/full-stack engineer cv.pdf"
+                  href="/Michael_Okoyenta_CV.pdf"
                   target="_blank"
                 >
                   Download CV
